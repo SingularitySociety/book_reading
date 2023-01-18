@@ -9,5 +9,5 @@
 
 - [第１回](https://singularitysociety.connpass.com/event/251891/)
 
-## BookReading-01 2022-02-28
+
 
