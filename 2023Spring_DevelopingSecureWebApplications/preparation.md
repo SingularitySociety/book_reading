@@ -33,6 +33,7 @@ Docker最新バージョンは「4.16.2 (95914)」です。
 ## OWASP ZAPのインストール
 
 [OWASP ZAPダウンロード](https://www.zaproxy.org/download/)からダウンロードし、インストールしてください。
+Mac の場合、セキュリティの警告が出ることがあるので、System Settings > Privacy & Security から、OWASP ZAP の実行を許可してください。
 
 ### Windowsの人🤚
 
