@@ -51,12 +51,12 @@ OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windo
 
 ### Macの設定方法
 
-1. Chrome を起動し、アドレスバーに「chrome://settings/system」を入力します。
+1. Chrome を起動し、アドレスバーに chrome://settings/system を入力します。
 2. 「パソコンのプロキシ設定を開く」をクリックします。
 3. プロキシ設定ウィンドウが開きます。「自動プロキシ構成」を `ON` にします。
-4. URLに「https://raw.githubusercontent.com/SingularitySociety/book_reading/main/2023Spring_DevelopingSecureWebApplications/proxy.pac」を入力します。
+4. URLに https://raw.githubusercontent.com/SingularitySociety/book_reading/main/2023Spring_DevelopingSecureWebApplications/proxy.pac を入力します。
 5. 「OK」をクリックします。
-6. 「http://example.jp/」にアクセスし、本書のコンテンツが表示されるか確認します。
+6. http://example.jp/ にアクセスし、本書のコンテンツが表示されるか確認します。
 
 ![](./img/preparation_examplejp.png)
 
@@ -65,9 +65,9 @@ OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windo
 1. 「スタートメニュー」から「設定」を開きます。
 2. 「ネットワークとインターネット」>「プロキシ」の順にクリックします。
 3. プロキシ設定ウィンドウが開きます。「セットアップスクリプトを使う」を `ON` にします。
-4. スクリプトのアドレスに「https://raw.githubusercontent.com/SingularitySociety/book_reading/main/2023Spring_DevelopingSecureWebApplications/proxy.pac」を入力します。
+4. 「スクリプトのアドレス」に https://raw.githubusercontent.com/SingularitySociety/book_reading/main/2023Spring_DevelopingSecureWebApplications/proxy.pac を入力します。
 5. 「保存」をクリックします。
-6. 「http://example.jp/」にアクセスし、本書のコンテンツが表示されるか確認します。
+6. http://example.jp/ にアクセスし、本書のコンテンツが表示されるか確認します。
 
 ### コンテンツが表示されない場合
 
