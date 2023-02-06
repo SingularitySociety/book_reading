@@ -51,7 +51,7 @@ OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windo
 
 ### Macの設定方法
 
-1. Chrome を起動し、アドレスバーに chrome://settings/system を入力します。
+1. Chrome を起動し、アドレスバーに `chrome://settings/system` を入力します。
 2. 「パソコンのプロキシ設定を開く」をクリックします。
 3. プロキシ設定ウィンドウが開きます。「自動プロキシ構成」を `ON` にします。
 4. URLに https://raw.githubusercontent.com/SingularitySociety/book_reading/main/2023Spring_DevelopingSecureWebApplications/proxy.pac を入力します。
