@@ -49,8 +49,6 @@ OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windo
 
 今回は、本書に記載のあるFireboxは使わず、Chrome を利用します。
 
-[proxy.pac](./proxy.pac) をダウンロードし、任意の場所に配置してください。
-
 ### Macの設定方法
 
 1. Chrome を起動し、アドレスバーに「chrome://settings/system」を入力します。
