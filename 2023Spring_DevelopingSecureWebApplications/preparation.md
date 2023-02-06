@@ -44,3 +44,34 @@ Mac の場合、セキュリティの警告が出ることがあるので、Syst
 Windows は、JRE（Javaの実行環境）64bit版 が必要です。必要に応じてインストールしてください。
 
 OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windowsで OWAS ZAP のセットアップ](https://zenn.dev/singularity/articles/d9a555238061e9)」こちらの記事の内容を試してみてください。
+
+## Proxyの設定
+
+今回は、本書に記載のあるFireboxは使わず、Chrome を利用します。
+
+[proxy.pac](./proxy.pac) をダウンロードし、任意の場所に配置してください。
+
+### Macの設定方法
+
+1. Chrome を起動し、アドレスバーに「chrome://settings/system」を入力します。
+2. 「パソコンのプロキシ設定を開く」をクリックします。
+3. プロキシ設定ウィンドウが開きます。「自動プロキシ構成」を `ON` にします。
+4. URLに「https://raw.githubusercontent.com/SingularitySociety/book_reading/main/2023Spring_DevelopingSecureWebApplications/proxy.pac」を入力します。
+5. 「OK」をクリックします。
+6. 「http://example.jp/」にアクセスし、本書のコンテンツが表示されるか確認します。
+
+![](./img/preparation_examplejp.png)
+
+### Windowsの設定方法
+
+1. 「スタートメニュー」から「設定」を開きます。
+2. 「ネットワークとインターネット」>「プロキシ」の順にクリックします。
+3. プロキシ設定ウィンドウが開きます。「セットアップスクリプトを使う」を `ON` にします。
+4. スクリプトのアドレスに「https://raw.githubusercontent.com/SingularitySociety/book_reading/main/2023Spring_DevelopingSecureWebApplications/proxy.pac」を入力します。
+5. 「保存」をクリックします。
+6. 「http://example.jp/」にアクセスし、本書のコンテンツが表示されるか確認します。
+
+### コンテンツが表示されない場合
+
+- Dockerが起動しているか確認してください。
+- ブラウザーのキャッシュを削除してみてください。
