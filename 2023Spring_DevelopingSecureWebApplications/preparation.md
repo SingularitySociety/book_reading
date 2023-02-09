@@ -47,7 +47,7 @@ OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windo
 
 ## Proxyの設定
 
-今回は、本書に記載のあるFireboxは使わず、Chrome を利用します。
+今回は、本書に記載のあるFirefoxは使わず、Chrome を利用します。
 
 ### Macの設定方法
 
