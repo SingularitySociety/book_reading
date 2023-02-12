@@ -14,5 +14,5 @@
     - ２章（P14〜42）は実施しません。
 
 ## 事前準備
-読書会参加する前までに「[事前準備](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/preparation.md)」をお願いします。
+読書会に参加する前までに「[事前準備](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/preparation.md)」をお願いします。
 
