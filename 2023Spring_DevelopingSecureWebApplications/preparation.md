@@ -88,7 +88,7 @@ OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windo
 
 ## 動作確認（2023.02.13追記）
 
-OWAS ZAPが起動した状態で [http://example.jp/](http://example.jp/phpinfo.php) にアクセスしてください。 OWAS ZAP上で、リクエストが表示されていれば、OKです。
+OWAS ZAPとDockerのコンテナが起動した状態で [http://example.jp/](http://example.jp/phpinfo.php) にアクセスしてください。 OWAS ZAP上で、リクエストが表示されていれば、OKです。
 
 ![](./img/preparation_owaszap_check.jpg)
 
