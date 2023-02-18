@@ -71,15 +71,15 @@ OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windo
 Network > Connection を開き、HTTP Proxy に以下を設定してください。
 
 - Enabled にチェックを入れる
-- Host:127.0.0.1
-- Port：13128
+- Host: 127.0.0.1
+- Port: 13128
 
 ![](./img/preparation_owaszap_httpproxy.png)
 
 Network > Local Servers/Proxies を開き、Main Proxy に以下を設定してください。
 
-- localhost
-- 58888
+- Host: localhost
+- Port: 58888
 
 ![](./img/preparation_owaszap_setting.png)
 
