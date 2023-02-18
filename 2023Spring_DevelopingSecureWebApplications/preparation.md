@@ -76,8 +76,6 @@ Network > Connection を開き、HTTP Proxy に以下を設定してください
 
 ![](./img/preparation_owaszap_httpproxy.png)
 
-メニューバーにあるツール（または歯車アイコン） > オプション > を開き、Main Proxyに以下を設定してください。
-
 Network > Local Servers/Proxies を開き、Main Proxy に以下を設定してください。
 
 - localhost
