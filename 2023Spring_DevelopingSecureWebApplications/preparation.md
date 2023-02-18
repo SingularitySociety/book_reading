@@ -9,6 +9,7 @@
   - BurpSuiteに慣れているかたはそちらでも構いません
 - Proxyの設定
 - 動作確認
+- トラブルシューティング
 
 環境構築に躓いたら、お気軽に Slackまでご質問ください。答えられる範囲でお答えします。
 
@@ -55,9 +56,29 @@ Windows は、JRE（Javaの実行環境）64bit版 が必要です。必要に�
 
 OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windowsで OWAS ZAP のセットアップ](https://zenn.dev/singularity/articles/d9a555238061e9)」こちらの記事の内容を試してみてください。
 
-### OWASP ZAPの設定（2023.02.13追記）
+### OWASP ZAPの設定
 
-ツール > オプション を開き、Main Proxyに以下を設定してください。
+確認・設定箇所は２箇所です。
+- HTTP Proxy
+- Main Proxy
+
+#### 設定方法
+
+歯車アイコン（オプション）をクリックします。
+
+![](./img/preparation_owaszap_option.png)
+
+Network > Connection を開き、HTTP Proxy に以下を設定してください。
+
+- Enabled にチェックを入れる
+- Host:127.0.0.1
+- Port：13128
+
+![](./img/preparation_owaszap_httpproxy.png)
+
+メニューバーにあるツール（または歯車アイコン） > オプション > を開き、Main Proxyに以下を設定してください。
+
+Network > Local Servers/Proxies を開き、Main Proxy に以下を設定してください。
 
 - localhost
 - 58888
@@ -86,7 +107,7 @@ OWAS ZAPのインストーラーがエラーで起動しない場合は「[Windo
 5. 「保存」をクリックします。
 6. http://example.jp/ にアクセスし、本書のコンテンツが表示されるか確認します。
 
-## 動作確認（2023.02.13追記）
+## 動作確認
 
 OWAS ZAPとDockerのコンテナが起動した状態で [http://example.jp/](http://example.jp/phpinfo.php) にアクセスしてください。 OWAS ZAP上で、リクエストが表示されていれば、OKです。
 
@@ -95,3 +116,9 @@ OWAS ZAPとDockerのコンテナが起動した状態で [http://example.jp/](ht
 Chrome上で画面表示が崩れるときは、OWASP ZAP画面右上にある「Enable the ZAP HUD」をOFFにしてください。
 
 ![](./img/preparation_EnabletheZAPHUD.png)
+
+## トラブルシューティング
+
+`docker compose up -d` 起動時に以下のエラーが表示される場合は、こちらの記事「[【Docker】docker-compose build実行時にload metadata for docker.io/library/○○とエラーが表示される](https://qiita.com/so__hei__/items/46bac5698aa36fa456bb)」を試してください。
+
+![](./img/preparation_dockercomposeerr.png)
