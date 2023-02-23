@@ -9,9 +9,21 @@
 
 ## Note
 
-ZAPのブレークポイントについて
+### OWASP ZAPのブレークポイントについて
+
+OSやバージョンによって表示がことなるようです。P56にあるブレークポイントが見つからない場合は、以下を参考にしてください。
 
 ![image](https://user-images.githubusercontent.com/39753696/220958559-3ba8dea0-a6da-46d6-8e53-7635e345b45c.png)
+
+### レスポンスヘッダの表示順について
+
+レスポンスヘッダの各項目は順不同です。
+
+![image (1)](https://user-images.githubusercontent.com/39753696/220959752-aa4e4007-c8f7-405e-86a6-562f7453922b.png)
+
+### [リクエストヘッダのRefererはTypo](https://en.wikipedia.org/wiki/HTTP_referer#L)
+
+![image](https://user-images.githubusercontent.com/39753696/220962406-f4398488-7e6f-4272-acc5-164f1d4956bc.png)
 
 ## 次回
 - 3/4（土）10:00 - 12:00
