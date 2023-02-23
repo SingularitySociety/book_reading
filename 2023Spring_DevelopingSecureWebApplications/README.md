@@ -7,11 +7,12 @@
 
 ## 読書会の詳細と参加方法
 
-- [第１回](https://singularitysociety.connpass.com/event/251891/)
+- [第1回](https://singularitysociety.connpass.com/event/251891/)
   - 「はじめに」
   - １章　(P1〜10)
   - ３章　(P45〜できるだけ)を読み進めます。
     - ２章（P14〜42）は実施しません。
+- [第2回](https://singularitysociety.connpass.com/event/275867/)
 
 ## 事前準備
 読書会に参加する前までに「[事前準備](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/preparation.md)」をお願いします。
