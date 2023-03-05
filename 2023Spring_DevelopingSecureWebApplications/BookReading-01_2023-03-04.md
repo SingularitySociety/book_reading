@@ -26,6 +26,15 @@
 
 ![](./img/2023030401.png)
 
+### Chromeで、/33/33-005b.html のカウンターが動かない
+参加者の方からコメントをいただきました。
+
+- Firefoxだと動作します。
+- Chromeでは、3rd Party Cookieの関係で、セキュリティ強化されて動作しなくなりました。[参考](https://qiita.com/emacs_hhkb/items/ff6af4361b8a10f781a9)
+- サーバをhttps化して、php側でヘッダーのCookieで Secre; SameSite=None;をつけると動作します。
+
+Dockerファイルを修正いただきました。パッチを作成して参加者に配布予定です。
+
 ## 次回
 - 3/18（土）10:00 - 12:00
 - P99 インジェクション系脆弱性とは から読みます
