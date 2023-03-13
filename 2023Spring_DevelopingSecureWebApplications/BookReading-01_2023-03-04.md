@@ -33,7 +33,16 @@
 - Chromeでは、3rd Party Cookieの関係で、セキュリティ強化されて動作しなくなりました。[参考](https://qiita.com/emacs_hhkb/items/ff6af4361b8a10f781a9)
 - サーバをhttps化して、php側でヘッダーのCookieで Secre; SameSite=None;をつけると動作します。
 
-参加者の方がDockerファイルを修正してくれました。そのまま配布はできないので、パッチを作成して参加者に共有予定です。
+上記を適用するための[パッチファイル](/2023Spring_DevelopingSecureWebApplications/diff.patch)を準備しました。
+以下は適用手順の例になります。
+
+- wasbook-docker のコンテナを停止させておく
+- wasbook-docker.zip を再ダウンロードして解凍し、wasbook-docker_test に名前を変更する
+- wasbook-docker_test に [diff.patch](/2023Spring_DevelopingSecureWebApplications/diff.patch) を移動させる
+- wasbook-docker_test で、```git init```、```git add README.md```、```git commit -m "first commit"``` をしたあとで、```git apply diff.patch``` を実行する
+- ```docker compose up -d``` を実行してコンテナを起動する
+- ブラウザから https://api.example.net へアクセスし、「プライバシーが保護されません」を了承しておく
+- https://example.jp/33/ に「33-005bc:(chrome対応)アクセスカウンタ（Access-Control-Allow-Credentialsあり）」が表示され、リンク先でカウンターが正常に動いていれば成功
 
 ## 次回
 - 3/18（土）10:00 - 12:00
