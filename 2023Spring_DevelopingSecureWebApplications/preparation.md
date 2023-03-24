@@ -87,7 +87,9 @@ Network > Local Servers/Proxies を開き、Main Proxy に以下を設定して�
 
 ## Proxyの設定
 
-今回は、本書に記載のあるFirefoxは使わず、Chrome を利用します。
+本書ではFirefoxを利用しています。Firefoxで進めたい方は、本書の「実習環境セットアップ」の「Firefoxインストール」と「Firefoxの拡張FoxyProxy-Standardのインストール」をご確認ただき、環境をご用意ください。
+
+Chromeで動かしたい場合は以下を実施してください。（本書の内容で一部Chromeで動かないところがあります。パッチを用意しているので後日手順を追記します）
 
 ### Macの設定方法
 
@@ -117,8 +119,67 @@ Chrome上で画面表示が崩れるときは、OWASP ZAP画面右上にある�
 
 ![](./img/preparation_EnabletheZAPHUD.png)
 
-## トラブルシューティング
+## トラブルシューティング　😖🥺😵
+
+### docker-compose build実行時にload metadata for docker.io/library/○○とエラーが表示される
 
 `docker compose up -d` 起動時に以下のエラーが表示される場合は、こちらの記事「[【Docker】docker-compose build実行時にload metadata for docker.io/library/○○とエラーが表示される](https://qiita.com/so__hei__/items/46bac5698aa36fa456bb)」を試してください。
 
 ![](./img/preparation_dockercomposeerr.png)
+
+### An unexpected error occurred　というエラーが表示された
+
+Windows＋Docker環境で以下のメッセージを含んだダイアログが表示された。
+
+```
+An unexpected error occurred
+
+A timeout occured while waiting for a WSL integration agent to become
+ready.
+
+This can occur when starting after an abrupt termination. To work around the
+issue, please terminate WSL (ws --shutdown) and start Docker Desktop
+again. If the issue persists please collect diagnostics and submit an issue
+(https://docs.docker.com/desktop/troubleshoot/overview/#diagnose-from-
+the-terminal).
+
+Error details:
+1 error occurred:
+* starting WSL integration service: synchronising agents: starting
+added distros: 1 error occurred:
+* waiting for WSL integration for Ubuntu: waiting for WSL distro
+integration to become ready in "Ubuntu": timeout
+```
+
+以下の２パターンで対応してみてください。（読書会参加の Senten様より情報いただきました。ありがとうございます）
+
+**パターン１：**
+
+1. Docker desktopを停止する。
+2. `wsl --shutdown` を実行する。
+3. `wsl` を実行する。
+4. Docker desktopを起動する。
+
+**パターン２：**
+
+`wsl --set-default-version 2` を実行する。
+
+この節冒頭のエラーが出た前に `Docker.Core.HttpBadResponseException` エラーが出た場合は、以下の方法で直ることがあるそうです。
+
+1. 「Windowsセキュリティ」を開く。
+2. 「アプリとブラウザーコントロール」を開く。
+3. 「Exploit Protectionの設定]をクリックする。
+4. 「プログラム設定」をクリックする。
+5. `vmcompute.exe` を入力して、「編集」をクリックする。
+6. プログラム設定のダイアログが表示されるので、一覧をスクロールで下げて「制御フローガード（CFG）」の「システム設定の上書き」のチェックを付けて、オフにし、「適用」をクリックする。
+7. PowerShellを管理者で起動して、`net stop vmcompute`　`net start vmcompute`　を実行　＜－サービスが起動しない。
+8. プログラム設定のダイアログが表示されるので、一覧をスクロールで下げて「制御フローガード（CFG）」の「システム設定の上書き」のチェックを外して「適用」をクリックする。
+9. PowerShellを管理者で起動して、`net stop vmcompute`　`net start vmcompute` を実行する。
+
+表示されたエラー画面のもとのエラーを特定できないと対処ができないかもしれません。
+同じなら直ると思います。
+
+**ご報告頂いた参加者の方より追記：** 私のWindows11の環境下では、WindowsのUpdateを適用するたびに上記設定がリセットされるようで、3月のパッチ適用後も同様なエラーが発生しました。
+厳密にはエラー画面の表示まで待っていないのですが、上記設定した情報がクリアされているので、再度、「Windowsセキュリティ」→「アプリとブラウザーコントロール」→
+「Exploit Protectionの設定]→「プログラム設定」→・・・・（上の手順みてね）を実施して、Docker Desktopが利用できるようになりました。👏👏👏
+
