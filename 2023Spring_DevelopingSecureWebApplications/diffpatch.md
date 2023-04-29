@@ -4,7 +4,7 @@
 
 当読書会で使用するChromeですが、Chromeだと動かないハンズオンがいくつかあります。
 
-Chromeでは、3rd Party Cookieの関係でセキュリティ強化され、[参考](https://qiita.com/emacs_hhkb/items/ff6af4361b8a10f781a9)　これによる影響で、ハンズオンが動かない現象が発生しています。
+Chromeでは、3rd Party Cookieの関係でセキュリティ強化され（[参考](https://qiita.com/emacs_hhkb/items/ff6af4361b8a10f781a9)）これによる影響で、ハンズオンが動かない現象が発生しています。
 
 ## 回避方法
 1. Chromeで動かいないハンズオンは、Firefoxだと動作します。
@@ -24,7 +24,7 @@ Chromeでは、3rd Party Cookieの関係でセキュリティ強化され、[参
 ### 準備編
 必要なもの
 - wasbook-docker.zip（オリジナル）
-- diff.20230401.patch（こちらにあります）
+- diff.20230401.patch（[こちら](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/diffpatch.md)をダウンロードしてください）
 
 前提
 - gitがインストールされていること（[こちら](https://git-scm.com/book/ja/v2/使い始める-Gitのインストール)からインストールできます）
