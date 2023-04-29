@@ -8,7 +8,7 @@ Chromeでは、3rd Party Cookieの関係でセキュリティ強化され（[参
 
 ## 回避方法
 1. Chromeで動かいないハンズオンは、Firefoxだと動作します。
-2. サーバをhttps化して、php側でヘッダーのCookieで Secre; SameSite=None;をつけると動作します。
+2. サーバをhttps化して、php側でヘッダーのCookieで `Secre; SameSite=None;` をつけると動作します。
 
 上記「2」を適用するパッチ(diff.patch)を用意しました。
 
