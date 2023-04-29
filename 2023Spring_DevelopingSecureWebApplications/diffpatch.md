@@ -65,13 +65,13 @@ https://example.jp
 - httpでアクセスすると、phpの参照がhttpsなため、エラーになるところが多数あります。必ず、httpsで利用するようにしてください。
 - CORSに関係ないところは動作します。しかし、CORS関係のところは、エラーになります。（phpの修正が必要）
 
-## wasbook-dockerに戻りたい場合
+## オリジナルのwasbook-dockerに戻りたい場合
 - https版のwasbookのディレクトリにて、docker-composeでコンテナを終了してください。
   - `docker-compose down`
 - オリジナルのwasbook-dockerのディレクトリに移動し、コンテナを起動します。
   - `docer-compose up -d`
 
-##　変更箇所
+## 変更箇所
 - apache、ngingxの2カ所です。
 - phpの参照先：http://　→　https:// に単純に変更しています.
 - 3-3のところで、33-005bをChrome用に33-005bcを追加してphpのヘッダーのset-cookieに `secure; SameSite="None";` を追加するように修正しています。
