@@ -89,7 +89,7 @@ Network > Local Servers/Proxies を開き、Main Proxy に以下を設定して�
 
 本書ではFirefoxを利用しています。Firefoxで進めたい方は、本書の「実習環境セットアップ」の「Firefoxインストール」と「Firefoxの拡張FoxyProxy-Standardのインストール」をご確認ただき、環境をご用意ください。
 
-Chromeで動かしたい場合は以下を実施してください。（本書の内容で一部Chromeで動かないところがあります。パッチを用意しているので後日手順を追記します）
+Chromeで動かしたい場合は以下を実施してください。⚠️本ページの内容で一部 Chrome で動かないところがあります！（Firefoxだと動作する）。Chromeで動かせるようパッチを用意しています。詳しくは→[こちら](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/diffpatch.md)を御覧ください。
 
 ### Macの設定方法
 
