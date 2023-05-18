@@ -13,7 +13,8 @@
 - [第4回](https://singularitysociety.connpass.com/event/278576/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-04_2023-04-01.md)
 - [第5回](https://singularitysociety.connpass.com/event/280001/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-05_2023-04-15.md)
 - [第6回](https://singularitysociety.connpass.com/event/281300/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-06_2023-04-29.md)
-- 第7回（調整中） | P227 から読みます
+- [第7回](https://singularitysociety.connpass.com/event/282747/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-07_2023-05-13.md)
+- [第8回」（調整中） | P261から読みます
 
 ## 事前準備
 読書会に参加する前までに「[事前準備](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/preparation.md)」をお願いします。
