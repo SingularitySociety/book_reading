@@ -24,7 +24,7 @@ Chromeでは、3rd Party Cookieの関係でセキュリティ強化され（[参
 ### 準備編
 必要なもの
 - wasbook-docker.zip（オリジナル）
-- diff.20230401.patch（[こちら](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/diffpatch.md)をダウンロードしてください）
+- diff.20230526.patch（[こちら](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/diff.20230526.patch)をダウンロードしてください）
 
 前提
 - gitがインストールされていること（[こちら](https://git-scm.com/book/ja/v2/使い始める-Gitのインストール)からインストールできます）
@@ -82,6 +82,19 @@ https://example.jp
   - 上記の反映をDockerfileにDockerfileに取り込むための証明書部分を追加しています。
 - docker-compse.yml
   - apache部分を直接https(443)でアクセスできるようにしています。
+
+### 変更履歴（diff.20230526.patch版）　by Sentenさん
+以下、2点修正
+- apacheのsslのモジュールで読み込む設定を
+- html,php以外の部分でhttpsに修正していたところがあり、修正しました。<-4-16？
+
+通信の流れは次のようになっています。
+
+PC-(58888)->OWASP-(13128)->apach(フォワードProxy)-(80/443)->nginx(リバースProxy)-(80/443)->apache
+
+実際のphpソースでは、httpの箇所をhttpsに変更しているため、httpsでないとアプリケーションが動作しません。
+
+※一部443ではなく、80でアクセスする必要があるページもあり、その場合は、80でアクセスしても動作するようにphpのソースはhttpとしています。
 
 ## OWASP経由で動作しない場合
 
