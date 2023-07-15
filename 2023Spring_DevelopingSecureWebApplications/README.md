@@ -17,7 +17,8 @@
 - [第8回](https://singularitysociety.connpass.com/event/284621/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-08_2023-05-27.md)
 - [第9回](https://singularitysociety.connpass.com/event/285704/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-09_2023-06-10.md)
 - [第10回](https://singularitysociety.connpass.com/event/287640/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-10_2023-06-24.md)
-- [第11回](https://singularitysociety.connpass.com/event/289059/) | P371から読みます
+- [第11回](https://singularitysociety.connpass.com/event/289059/) |  [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-11_2023-07-08.md)
+- [第12回](https://singularitysociety.connpass.com/event/290469/) | P410から読みます
 
 参加方法のリンク先が403になるときはURLを直接たたいてみてください。
 
