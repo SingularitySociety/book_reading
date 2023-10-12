@@ -22,10 +22,11 @@
 - [第13回](https://singularitysociety.connpass.com/event/291734/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-13_2023-08-05.md)
 - [第14回](https://singularitysociety.connpass.com/event/293262/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-14_2023-08-19.md)
 - [第15回](https://singularitysociety.connpass.com/event/294558/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-15_2023-09-16.md)
-- [第16回](https://singularitysociety.connpass.com/event/297062/) | 次回P529から
+- [第16回](https://singularitysociety.connpass.com/event/297062/) | [読んだところ](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/BookReading-17_2023-10-07.md)
+- [第18回](https://singularitysociety.connpass.com/event/299309/) | 次回P600
 
 参加方法のリンク先が403になるときはURLを直接たたいてみてください。
 
-## 事前準備
-読書会に参加する前までに「[事前準備](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/preparation.md)」をお願いします。
+## **事前準備** 
+**読書会に参加する前までに「[事前準備](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/preparation.md)」をお願いします。**
 
