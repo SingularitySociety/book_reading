@@ -27,6 +27,6 @@
 
 参加方法のリンク先が403になるときはURLを直接たたいてみてください。
 
-## **事前準備** 
-**読書会に参加する前までに「[事前準備](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/preparation.md)」をお願いします。**
+## ~~事前準備~~
+~~読書会に参加する前までに「[事前準備](https://github.com/SingularitySociety/book_reading/blob/main/2023Spring_DevelopingSecureWebApplications/preparation.md)」をお願いします。~~
 
